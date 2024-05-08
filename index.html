@@ -54,7 +54,7 @@
     </style>
   </head>
 
-  <body class="lg:ml-24 lg:mr-24">
+  <body class="ml-4 mr-4 lg:ml-24 lg:mr-24">
     <header>
       <nav>
         <!-- Nav Bar Starts -->
@@ -62,9 +62,7 @@
         <!-- Navbar for Mobile Starts -->
 
         <div class="lg:hidden flex justify-around items-center">
-
           <div class="navbar bg-base-100">
-
             <div>
               <div class="dropdown dropdown-bottom dropdown-right">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -99,14 +97,14 @@
             <div class="">
               <a class="text-2xl font-extrabold">P-Ticket</a>
             </div>
-
           </div>
 
-          <div class="flex gap-2 justify-center items-center border rounded p-4 bg-[#cbf4c5]">
+          <div
+            class="flex gap-2 justify-center items-center border rounded p-4 bg-[#cbf4c5]"
+          >
             <p class="font-bold text-[#1DD100]">Bus</p>
             <img src="images/bus-icon.png" alt="" />
           </div>
-
         </div>
 
         <!-- Navbar for Mobile Ends -->
@@ -138,10 +136,37 @@
         </div>
 
         <!-- Navbar for Large Device Ends-->
+
+        <!-- Nav Bar End -->
       </nav>
     </header>
 
-    <!-- Nav Bar End -->
+    <main>
+      <!-- Banner Section Starts -->
+
+      <!-- Banner Section For Large Devices Starts -->
+
+      <section>
+        <div
+          class=" rounded-lg bg-cover space-y-2 lg:space-y-5 flex flex-col justify-center items-center p-3 lg:pt-40 lg:pb-40"
+          style="background-image: url(/images/banner.png)"
+        >
+          <h1 class="text-center text-xl lg:text-7xl text-white font-bold lg:font-extrabold">
+            End To End Travel With
+          </h1>
+          <h1 class="text-center text-xl lg:text-7xl text-[#1DD100] font-bold lg:font-extrabold">
+            P Poribohon
+          </h1>
+          <p class="text-xs lg:text-lg text-white text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. <br>The integrated testing features allow for a streamlined .
+          </p>
+          <button class="btn border-transparent normal-case text-sm lg:text-xl lg:font-bold bg-[#1DD100]"> Buy Tickets</button>
+        </div>
+      </section>
+
+      <!-- Banner Section For Large Devices Ends -->
+    </main>
 
     <script src="js/p-ticket.js"></script>
   </body>

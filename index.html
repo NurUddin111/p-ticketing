@@ -160,7 +160,7 @@
             Yes, you can run unit tests and view the results directly within the
             app. <br />The integrated testing features allow for a streamlined .
           </p>
-          <button
+          <button onclick="scrollDown()"
             class="btn border-transparent normal-case text-sm lg:text-xl lg:font-bold bg-[#1DD100]"
           >
             Buy Tickets
@@ -227,45 +227,636 @@
       <!-- Coupon Card Section Starts -->
 
       <section class="lg:mt-36">
-
-        <h1 class="text-6xl text-black font-extrabold text-center mb-16">Best Offers For You</h1>
+        <h1 class="text-6xl text-black font-extrabold text-center mb-16">
+          Best Offers For You
+        </h1>
 
         <div class="flex gap-10 justify-center">
-
-          <div class="bg-[#FFBF0F] w-auto p-16 flex gap-20 items-center rounded-xl ">
-
+          <div
+            class="bg-[#FFBF0F] w-auto p-16 flex gap-20 items-center rounded-xl"
+          >
             <div class="space-y-3">
               <h1 class="text-black text-5xl font-extrabold">15% OFF</h1>
               <p class="text-black text-xl font-semibold">On your next use</p>
               <p class="text-sm">Use by January 24</p>
             </div>
-  
+
             <div class="space-y-3">
               <h1 class="text-black text-5xl font-extrabold">NEW15</h1>
               <p class="text-black text-xl font-semibold">Coupon Code</p>
             </div>
           </div>
 
-          <div class="bg-[#F78C9C] w-auto p-16 flex gap-20  justify-center items-center rounded-xl" >
-
+          <div
+            class="bg-[#F78C9C] w-auto p-16 flex gap-20 justify-center items-center rounded-xl"
+          >
             <div class="space-y-3">
               <h1 class="text-black text-5xl font-extrabold">20% OFF</h1>
               <p class="text-black text-xl font-semibold">On your next use</p>
               <p class="text-sm">Use by January 24</p>
             </div>
-  
+
             <div class="space-y-3">
               <h1 class="text-black text-5xl font-extrabold">Couple 20</h1>
               <p class="text-black text-xl font-semibold">Coupon Code</p>
             </div>
           </div>
-
         </div>
-
       </section>
 
       <!-- Coupon Card Section Ends -->
-      
+
+      <div class="mt-20 mb-20 flex justify-center">
+        <button class="btn btn-outline text-[#1DD100]">See All Offers</button>
+      </div>
+
+      <!-- Form Section Starts -->
+
+      <section>
+        <div
+          class="border-t-4 border-[#1DD100] rounded-t-2xl p-16 bg-[#F7F8F8]"
+        >
+          <!-- Title Section Starts -->
+
+          <div class="space-y-5 mb-5">
+            <h1 class="text-center text-4xl font-bold">P.H. Poribohon</h1>
+            <p class="text-center text-base">
+              Yes, you can run unit tests and view the results directly within
+              the app. <br />
+              The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+
+          <!-- Title Section Starts -->
+
+          <!-- Ticket Look Section Starts -->
+
+          <div
+            class="bg-white p-10 flex justify-around items-center rounded-lg"
+          >
+            <div class="space-y-5 border-dashed border-r-2 p-6">
+              <div class="rounded-2xl space-y-5">
+                <div class="mt-10 flex justify-between">
+                  <div class="flex gap-4">
+                    <div>
+                      <img src="images/bus-logo.png" alt="" />
+                    </div>
+                    <div class="space-y-2">
+                      <h1 class="text-3xl font-bold">GreenLine Poribohon</h1>
+                      <p class="text-xs">Coach-009-WEB ! AC_Business</p>
+                    </div>
+                  </div>
+                  <div
+                    class="border-2 border-[#1DD100] bg-[#cbf4c5] p-3 flex gap-4 justify-center items-center rounded-xl w-auto"
+                  >
+                    <img src="images/seat-green-filled.png" alt="" />
+                    <p class="text-sm text-[#1DD100] font-semibold">
+                      40 Seats Left
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-[#F7F8F8] p-5 rounded-2xl space-y-4">
+                  <div class="flex justify-between border-dashed border-b-2">
+                    <p>Route</p>
+                    <p>Dhaka-Sylhet</p>
+                  </div>
+                  <div class="flex justify-between border-dashed border-b-2">
+                    <p>Departure Time</p>
+                    <p>9:00 pm</p>
+                  </div>
+                  <div class="flex gap-20">
+                    <div
+                      class="bg-[#e6e8eb] p-3 rounded-md text-sm font-semibold"
+                    >
+                      Boarding Point - Laxmipur
+                    </div>
+                    <div
+                      class="bg-[#e6e8eb] p-3 rounded-md text-sm font-semibold"
+                    >
+                      Dropping Point - Bagura
+                    </div>
+                    <div
+                      class="bg-[#e6e8eb] p-3 rounded-md text-sm font-semibold"
+                    >
+                      Est. Time - 11 Hours
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <img src="images/fare.png" alt="" />
+              <h1 class="text-4xl font-extrabold">550 Tk</h1>
+              <p class="text-lg text-[#7b828c]">Per Seat</p>
+            </div>
+          </div>
+
+          <!-- Ticket Look Section Ends -->
+
+          <div class="flex gap-10 bg-white mt-10">
+
+            <!-- Available and Booked Seat List Section Starts -->
+
+            <div
+              class="mt-10 rounded-lg border-dashed border-r-2 p-16 w-7/12"
+            >
+              <h1 class="text-2xl font-semibold border-dashed border-b-2 p-4">
+                Select Your Seat
+              </h1>
+
+              <div class="flex justify-between border-dashed border-b-2 p-4">
+                <div class="flex gap-2 items-center">
+                  <img src="images/seat-gray.png" alt="" />
+                  <p class="text-xs text-[#658080] font-semibold">Available</p>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  <p class="text-xs text-[#658080] font-semibold">Selected</p>
+                </div>
+              </div>
+
+              <div class="mt-6 space-y-6">
+                <!-- Driver Seat -->
+
+                <div class="flex justify-end items-center">
+                  <button class="btn btn-active btn-ghost w-20">
+                    <i class="fa-solid fa-circle-user fa-beat"></i>
+                  </button>
+                </div>
+
+                <!-- Seats : Row-A -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">A</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        A1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        A2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        A3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        A4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-B -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        B1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        B2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        B3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        B4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-C -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">C</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        C1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        C2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        C3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        C4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-D -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">D</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        D1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        D2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        D3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        D4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-E -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">E</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        E1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        E2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        E3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        E4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-F -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">F</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        F1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        F2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        F3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        F4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-G -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">G</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        G1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        G2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        G3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        G4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-H -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">H</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        H1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        H2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        H3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        H4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-I -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">I</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        I1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        I2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        I3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        I4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Seats : Row-J -->
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">J</h3>
+                    <div>
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        J1
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        J2
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        J3
+                      </button>
+                    </div>
+                    <div class="flex items-center">
+                      <button
+                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Available and Booked Seat List Section Ends -->
+
+            <!-- Selected Seats , Class and Price Section Starts -->
+
+            <div class="mt-10 rounded-lg">
+
+              <h1 class="text-2xl font-semibold border-dashed border-b-2 pb-4">
+                Selected Seats
+              </h1>
+
+              <div class="bg-[#F7F8F8] p-10 space-y-4 mt-5 rounded-xl">
+                <div
+                  class="mt-4 border-dashed border-b-2 border-[#7e9595] flex justify-between items-center pb-4"
+                >
+                  <h1 class="text-base font-bold">
+                    Seats
+                    <span class="bg-[#1DD100] p-1 text-xs text-white rounded"
+                      >2
+                    </span>
+                  </h1>
+                  <h1 class="text-base font-bold">Class</h1>
+                  <h1 class="text-base font-bold">Price</h1>
+                </div>
+
+                <div
+                  class="mt-4 flex justify-between items-center border-black border-b-2"
+                >
+                  <h1 class="text-base text-[#4a5757] font-semibold w-24 p-4">
+                    C2
+                  </h1>
+                  <h1 class="text-base text-[#4a5757] font-semibold p-4">
+                    Economy
+                  </h1>
+                  <h1 class="text-base text-[#4a5757] font-semibold p-4">
+                    500
+                  </h1>
+                </div>
+
+                <div class="flex justify-between">
+                  <h1 class="text-xl font-bold">Total Price</h1>
+                  <h1 class="text-xl font-bold">BDT <span>500</span></h1>
+                </div>
+
+                <div class="form-control">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Have Any Coupon?"
+                      class="w-auto rounded-3xl p-2.5 outline-none border-2"
+                    />
+                    <button class="btn btn-disabled">Apply</button>
+                  </div>
+                </div>
+
+                <div class="flex justify-between">
+                  <h1 class="text-xl font-bold">Grand Total</h1>
+                  <h1 class="text-xl font-bold">BDT <span>500</span></h1>
+                </div>
+
+            </div>
+
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <h1 class="text-base font-bold">Passenger Name*</h1>
+             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <h1 class="text-base font-bold">Phone Number*</h1>
+             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <h1 class="text-base font-bold">Email ID</h1>
+             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <button class="btn btn-success">Next</button>
+            </div>
+
+            <div class="bg-white mt-5 flex justify-around">
+              <p class="border-b-2 text-xs">Terms and Conditions</p>
+              <p class="border-b-2 text-xs">Cancellation Policy</p>
+            </div>
+
+            <!-- Selected Seats , Class and Price Section Ends -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Section Ends -->
     </main>
 
     <script src="js/p-ticket.js"></script>

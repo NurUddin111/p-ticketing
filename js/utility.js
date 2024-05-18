@@ -72,7 +72,7 @@ document.getElementById('coupon').addEventListener('keyup', function () {
 
     let input = document.getElementById("coupon").value;
 
-    if (input == "NEW15") {
+    if (input === "NEW15") {
         document.getElementById("apply-coupon-btn").addEventListener('click', function () {
             document.getElementById('coupon-box').classList.add('hidden');
             document.getElementById('discount-section').classList.remove('hidden');

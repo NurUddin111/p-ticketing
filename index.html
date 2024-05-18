@@ -55,63 +55,13 @@
   </head>
 
   <body class="ml-4 mr-4 lg:ml-24 lg:mr-24">
+
     <header>
       <!-- Nav Bar Starts -->
 
       <nav>
-        <!-- Navbar for Mobile Starts -->
-
-        <div class="lg:hidden flex justify-around items-center">
-          <div class="navbar bg-base-100">
-            <div>
-              <div class="dropdown dropdown-bottom dropdown-right">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h7"
-                    />
-                  </svg>
-                </label>
-
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a href="#"> Home </a></li>
-                  <li><a href="#"> About </a></li>
-                  <li><a href="#"> Destination </a></li>
-                  <li><a href="#"> Search </a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="">
-              <a class="text-2xl font-extrabold">P-Ticket</a>
-            </div>
-          </div>
-
-          <div
-            class="flex gap-2 justify-center items-center border rounded p-4 bg-[#cbf4c5]"
-          >
-            <p class="font-bold text-[#1DD100]">Bus</p>
-            <img src="images/bus-icon.png" alt="" />
-          </div>
-        </div>
-
-        <!-- Navbar for Mobile Ends -->
 
         <!-- Navbar for Large Device Starts-->
-
-        <div class="hidden lg:block">
           <div
             class="navbar pt-4 pb-4 pl-6 pr-6 flex w-full justify-between items-center"
           >
@@ -133,9 +83,10 @@
               <img src="images/bus-icon.png" alt="" />
             </div>
           </div>
-        </div>
+        
 
         <!-- Navbar for Large Device Ends-->
+
       </nav>
 
       <!-- Nav Bar Ends -->
@@ -144,19 +95,19 @@
 
       <section>
         <div
-          class="bg-[url(images/banner.png)] rounded-lg bg-cover space-y-2 lg:space-y-5 flex flex-col justify-center items-center p-3 lg:pt-40 lg:pb-40 relative"
+          class="bg-[url(images/banner.png)] rounded-lg bg-cover space-y-5 flex flex-col justify-center items-center pt-40 pb-40 relative"
         >
           <h1
-            class="text-center text-xl lg:text-7xl text-white font-bold lg:font-extrabold"
+            class="text-center text-7xl text-white font-extrabold"
           >
             End To End Travel With
           </h1>
           <h1
-            class="text-center text-xl lg:text-7xl text-[#1DD100] font-bold lg:font-extrabold"
+            class="text-center text-7xl text-[#1DD100] font-extrabold"
           >
             P Poribohon
           </h1>
-          <p class="text-xs lg:text-lg text-white text-center">
+          <p class="text-lg text-white text-center">
             Yes, you can run unit tests and view the results directly within the
             app. <br />The integrated testing features allow for a streamlined .
           </p>
@@ -174,9 +125,9 @@
 
       <!-- Users Overlay Starts -->
 
-      <div class="hidden lg:flex lg:justify-start">
+      <div class="flex justify-start">
         <div
-          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto lg:w-auto absolute p-10 -mt-24 ml-20 flex gap-5"
+          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto absolute p-10 -mt-24 ml-20 flex gap-5"
         >
           <img src="images/people.png" alt="" />
           <div>
@@ -190,9 +141,9 @@
 
       <!-- Tickets Overlay Starts -->
 
-      <div class="hidden lg:flex lg:justify-center">
+      <div class="flex justify-center">
         <div
-          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto lg:w-auto absolute p-10 lg:-mt-24 flex gap-5"
+          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto absolute p-10 -mt-24 flex gap-5"
         >
           <img src="images/ticket-cupon.png" alt="" />
           <div>
@@ -206,9 +157,9 @@
 
       <!-- Rent Overlay Starts -->
 
-      <div class="hidden lg:flex lg:justify-end">
+      <div class="flex justify-end">
         <div
-          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto lg:w-auto absolute p-10 -mt-24 mr-20 flex gap-5"
+          class="bg-white border-b-4 border-b-[#1DD100] rounded-lg w-auto absolute p-10 -mt-24 mr-20 flex gap-5"
         >
           <img src="images/stoppage.png" alt="" />
           <div>
@@ -221,12 +172,14 @@
       <!-- Users Overlay Starts -->
 
       <!-- Overlay Part Ends -->
+
     </header>
 
     <main>
+
       <!-- Coupon Card Section Starts -->
 
-      <section class="lg:mt-36">
+      <section class="mt-36">
         <h1 class="text-6xl text-black font-extrabold text-center mb-16">
           Best Offers For You
         </h1>
@@ -273,6 +226,7 @@
       <!-- Form Section Starts -->
 
       <section>
+
         <div
           class="border-t-4 border-[#1DD100] rounded-t-2xl p-16 bg-[#F7F8F8]"
         >
@@ -311,7 +265,7 @@
                   >
                     <img src="images/seat-green-filled.png" alt="" />
                     <p class="text-sm text-[#1DD100] font-semibold">
-                      40 Seats Left
+                      <span id="seat-left">40</span> Seats Left
                     </p>
                   </div>
                 </div>
@@ -378,10 +332,11 @@
               </div>
 
               <div class="mt-6 space-y-6">
+
                 <!-- Driver Seat -->
 
                 <div class="flex justify-end items-center">
-                  <button class="btn btn-active btn-ghost w-20">
+                  <button  id="driver-seat" class="btn btn-active btn-ghost w-20">
                     <i class="fa-solid fa-circle-user fa-beat"></i>
                   </button>
                 </div>
@@ -393,14 +348,18 @@
                     <h3 class="text-2xl text-[#658080] font-semibold w-6">A</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                        onclick="selectedSeat(event.target.id)"
+                        id="a1"
+                        class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         A1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                        id="a2"
+                        class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         A2
                       </button>
@@ -409,14 +368,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="a3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         A3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                        id="a4"
+                        class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         A4
                       </button>
@@ -431,14 +394,18 @@
                     <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="b1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         B1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="b2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         B2
                       </button>
@@ -447,14 +414,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="b3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         B3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="b4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         B4
                       </button>
@@ -466,17 +437,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">C</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="c1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         C1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="C2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         C2
                       </button>
@@ -485,14 +460,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="c3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         C3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="c4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         C4
                       </button>
@@ -504,17 +483,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">D</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="d1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         D1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="d2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         D2
                       </button>
@@ -523,14 +506,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="d3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         D3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="d4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         D4
                       </button>
@@ -542,17 +529,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">E</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="e1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         E1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="e2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         E2
                       </button>
@@ -561,14 +552,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="e3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         E3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="e4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         E4
                       </button>
@@ -580,17 +575,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">F</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="f1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         F1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="f2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         F2
                       </button>
@@ -599,14 +598,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="f3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         F3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="f4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         F4
                       </button>
@@ -618,17 +621,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">G</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="g1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         G1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="g2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         G2
                       </button>
@@ -637,14 +644,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="g3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         G3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="g4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         G4
                       </button>
@@ -656,17 +667,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">H</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="h1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         H1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="h2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         H2
                       </button>
@@ -675,14 +690,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         H3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="h4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         H4
                       </button>
@@ -694,17 +713,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">I</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="i1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         I1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="i2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         I2
                       </button>
@@ -713,14 +736,18 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="i3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         I3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="i4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         I4
                       </button>
@@ -732,17 +759,21 @@
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-4 items-center">
-                    <h3 class="text-2xl text-[#658080] font-semibold w-6">J</h3>
+                    <h3 class="text-2xl text-[#658080] font-semibold w-6">B</h3>
                     <div>
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="j1"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         J1
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="j2"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         J2
                       </button>
@@ -751,28 +782,34 @@
                   <div class="flex gap-4">
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="j3"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         J3
                       </button>
                     </div>
                     <div class="flex items-center">
                       <button
-                        class="btn btn-active btn-ghost text-[#658080] w-20"
+                      onclick="selectedSeat(event.target.id)"
+                      id="j4"
+                      class="border-2 border-gray-200 rounded-lg bg-[#b9bcbc] p-3 font-semibold text-[#658080] w-20"
                       >
                         J4
                       </button>
                     </div>
                   </div>
                 </div>
+
               </div>
+
             </div>
 
             <!-- Available and Booked Seat List Section Ends -->
 
             <!-- Selected Seats , Class and Price Section Starts -->
 
-            <div class="mt-10 rounded-lg">
+            <div class="mt-10 rounded-lg w-96">
 
               <h1 class="text-2xl font-semibold border-dashed border-b-2 pb-4">
                 Selected Seats
@@ -784,66 +821,81 @@
                 >
                   <h1 class="text-base font-bold">
                     Seats
-                    <span class="bg-[#1DD100] p-1 text-xs text-white rounded"
-                      >2
+                    <span id="total-seats" class="bg-[#1DD100] p-1 text-xs text-white rounded"
+                      >0
                     </span>
                   </h1>
                   <h1 class="text-base font-bold">Class</h1>
                   <h1 class="text-base font-bold">Price</h1>
                 </div>
 
-                <div
-                  class="mt-4 flex justify-between items-center border-black border-b-2"
-                >
-                  <h1 class="text-base text-[#4a5757] font-semibold w-24 p-4">
-                    C2
-                  </h1>
-                  <h1 class="text-base text-[#4a5757] font-semibold p-4">
-                    Economy
-                  </h1>
-                  <h1 class="text-base text-[#4a5757] font-semibold p-4">
-                    500
-                  </h1>
+                <div id="seat-list" class="border-black border-b-2 space-y-3">
+
                 </div>
 
                 <div class="flex justify-between">
                   <h1 class="text-xl font-bold">Total Price</h1>
-                  <h1 class="text-xl font-bold">BDT <span>500</span></h1>
+                  <h1 class="text-xl font-bold">BDT <span id="total-price">00</span></h1>
                 </div>
 
-                <div class="form-control">
+                <div id="coupon-box" class="form-control hidden">
                   <div>
                     <input
+                      id="coupon"
                       type="text"
                       placeholder="Have Any Coupon?"
                       class="w-auto rounded-3xl p-2.5 outline-none border-2"
                     />
-                    <button class="btn btn-disabled">Apply</button>
+                    <button id="apply-coupon-btn" class="btn bg-[#1DD100]">Apply</button>
                   </div>
                 </div>
 
-                <div class="flex justify-between">
-                  <h1 class="text-xl font-bold">Grand Total</h1>
-                  <h1 class="text-xl font-bold">BDT <span>500</span></h1>
+                <div id="discount-section" class="hidden">
+                  <div class="flex justify-between">
+                  <h1 class="text-xl font-bold">Discount</h1>
+                  <h1 class="text-xl font-bold">BDT <span id="discount">00</span></h1>
+                  </div>
+              </div>
+
+                <div id="grand-total-section" class="hidden">
+                  <div class="flex justify-between">
+                    <h1 class="text-xl font-bold">Grand Total</h1>
+                    <h1 class="text-xl font-bold">BDT <span id="grand-total">00</span></h1>
+                  </div>
                 </div>
 
             </div>
 
             <div class="bg-white mt-5 space-y-4 flex flex-col">
-              <h1 class="text-base font-bold">Passenger Name*</h1>
-             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
-            </div>
-            <div class="bg-white mt-5 space-y-4 flex flex-col">
-              <h1 class="text-base font-bold">Phone Number*</h1>
-             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
-            </div>
-            <div class="bg-white mt-5 space-y-4 flex flex-col">
-              <h1 class="text-base font-bold">Email ID</h1>
-             <input class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
+              <h1  class="text-base font-bold">Passenger Name  </h1>
+             <input id="passenger-name" class="p-2 border-2 rounded-lg outline-none" type="text" name="" id="" placeholder="Enter Your Name">
             </div>
 
             <div class="bg-white mt-5 space-y-4 flex flex-col">
-              <button class="btn btn-success">Next</button>
+              <h1  class="text-base font-bold">Phone Number * </h1>
+             <input id="phone-number" class="p-2 border-2 rounded-lg outline-none" type="number" name="" id="" placeholder="Enter Your Phone Number">
+            </div>
+
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <h1 class="text-base font-bold">Email ID</h1>
+              <input class="p-2 border-2 rounded-lg outline-none" type="email" id="" placeholder="Enter Your Email ID">
+            </div>
+
+            <div class="bg-white mt-5 space-y-4 flex flex-col">
+              <label for="my_modal_6" id="btn-next" class="btn btn-disabled">Next</label>
+              <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+              <div class="modal" role="dialog">
+                <div class="modal-box flex flex-col justify-center items-center space-y-5">
+                  <img src="images/success.png" alt="">
+                  <h1 class="text-3xl font-bold text-[#1DD100] uppercase">success</h1>
+                  <p class="text-2xl font-semibold text-center">Thank you for Booking Our Bus Seats. 
+                    We are working hard to find the best service and deals for you. 
+                    </p>
+                    <p class="text-xl font-normal text-center">Shortly you will find a confirmation in your email.</p>
+                  <div class="modal-action">
+                    <label for="my_modal_6" class="btn rounded-lg bg-[#1DD100] text-base text-white pl-4 pr-4">Continue</label>
+                  </div>
+              </div>
             </div>
 
             <div class="bg-white mt-5 flex justify-around">
@@ -853,12 +905,14 @@
 
             <!-- Selected Seats , Class and Price Section Ends -->
           </div>
-        </div>
+            </div>
       </section>
 
       <!-- Form Section Ends -->
+      
     </main>
 
     <script src="js/p-ticket.js"></script>
+    <script src="js/utility.js"></script>
   </body>
 </html>
